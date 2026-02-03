@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('rayons', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->foreignId('id_wilayah')->constrained('wilayah');
+            $table->foreignId('id_wilayah')->constrained('wilayahs');
             $table->string('nip'); // NIP untuk Rayon
             $table->timestamps();
         });
